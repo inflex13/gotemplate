@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>To Do Page</title>
+</head>
+<body>
+<h1>I am on To Do page.</h1>
+<hr>
+<h3>Things to do every day</h3>
+<ol>
+    {{ range $todo := . }}
+    <li>{{ $todo }}</li>
+    {{ end }}
+</ol>
+</body>
+</html>
